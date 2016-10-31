@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>SimpleWeibo</display-name>
+	<welcome-file-list>
+		<welcome-file>login-page.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>CheckAccount</servlet-name>
+		<servlet-class>com.ht.servlet.CheckAccount</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckAccount</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>RegisterAccount</servlet-name>
+		<servlet-class>com.ht.servlet.RegisterAccount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterAccount</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Quit</servlet-name>
+		<servlet-class>com.ht.servlet.Quit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Quit</servlet-name>
+		<url-pattern>/Quit</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ChangePwd</servlet-name>
+		<servlet-class>com.ht.servlet.ChangePwd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangePwd</servlet-name>
+		<url-pattern>/changepass</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>PostWeibo</servlet-name>
+		<servlet-class>com.ht.servlet.PostWeibo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostWeibo</servlet-name>
+		<url-pattern>/postweibo</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>DeleteWeibo</servlet-name>
+		<servlet-class>com.ht.servlet.DeleteWeibo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteWeibo</servlet-name>
+		<url-pattern>/DeleteWeibo</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>HotWeibo</servlet-name>
+		<servlet-class>com.ht.servlet.HotWeibo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HotWeibo</servlet-name>
+		<url-pattern>/HotWeibo</url-pattern>
+	</servlet-mapping>
+	
+	
+		<servlet>
+		<servlet-name>FollowList</servlet-name>
+		<servlet-class>com.ht.servlet.FollowList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FollowList</servlet-name>
+		<url-pattern>/FollowList</url-pattern>
+	</servlet-mapping>
+	
+
+		<servlet>
+		<servlet-name>PersonalPage</servlet-name>
+		<servlet-class>com.ht.servlet.PersonalPage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PersonalPage</servlet-name>
+		<url-pattern>/PersonalPage</url-pattern>
+	</servlet-mapping>
+	
+	
+			<servlet>
+		<servlet-name>ChangeRelationship</servlet-name>
+		<servlet-class>com.ht.servlet.ChangeRelationship</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChangeRelationship</servlet-name>
+		<url-pattern>/ChangeRelationship</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+			<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>com.ht.servlet.Search</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/SearchList</url-pattern>
+	</servlet-mapping>
+	
+	
+			<servlet>
+		<servlet-name>FansList</servlet-name>
+		<servlet-class>com.ht.servlet.FansList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FansList</servlet-name>
+		<url-pattern>/FansList</url-pattern>
+	</servlet-mapping>
+
+
+
+			<servlet>
+		<servlet-name>WeiboList</servlet-name>
+		<servlet-class>com.ht.servlet.WeiboList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WeiboList</servlet-name>
+		<url-pattern>/WeiboList</url-pattern>
+	</servlet-mapping>
+	
+				<servlet>
+		<servlet-name>AddComment</servlet-name>
+		<servlet-class>com.ht.servlet.AddComment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddComment</servlet-name>
+		<url-pattern>/AddComment</url-pattern>
+	</servlet-mapping>
+	
+					<servlet>
+		<servlet-name>MyWeibo</servlet-name>
+		<servlet-class>com.ht.servlet.MyWeibo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyWeibo</servlet-name>
+		<url-pattern>/MyWeibo</url-pattern>
+	</servlet-mapping>
+	
+					<servlet>
+		<servlet-name>WeiboDetail</servlet-name>
+		<servlet-class>com.ht.servlet.WeiboDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WeiboDetail</servlet-name>
+		<url-pattern>/WeiboDetail</url-pattern>
+	</servlet-mapping>
+	
+						<servlet>
+		<servlet-name>DeleteComment</servlet-name>
+		<servlet-class>com.ht.servlet.DeleteComment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteComment</servlet-name>
+		<url-pattern>/DeleteComment</url-pattern>
+	</servlet-mapping>
+	
+	
+							<servlet>
+		<servlet-name>RepostPage</servlet-name>
+		<servlet-class>com.ht.servlet.RepostPage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RepostPage</servlet-name>
+		<url-pattern>/RepostPage</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+								<servlet>
+		<servlet-name>AddRepost</servlet-name>
+		<servlet-class>com.ht.servlet.AddRepost</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddRepost</servlet-name>
+		<url-pattern>/AddRepost</url-pattern>
+	</servlet-mapping>
+	
+									<servlet>
+		<servlet-name>CommentList</servlet-name>
+		<servlet-class>com.ht.servlet.CommentList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CommentList</servlet-name>
+		<url-pattern>/CommentList</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
